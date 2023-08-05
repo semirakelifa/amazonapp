@@ -1,0 +1,30 @@
+[debug] [2023-08-05T16:19:15.270Z] ----------------------------------------------------------------------
+[debug] [2023-08-05T16:19:15.273Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\semir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-08-05T16:19:15.273Z] CLI Version:   12.4.7
+[debug] [2023-08-05T16:19:15.273Z] Platform:      win32
+[debug] [2023-08-05T16:19:15.274Z] Node Version:  v18.16.0
+[debug] [2023-08-05T16:19:15.275Z] Time:          Sat Aug 05 2023 12:19:15 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-08-05T16:19:15.275Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-05T16:19:15.357Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-05T16:19:15.357Z] > authorizing via signed-in user (semirakelifa08@gmail.com)
+[debug] [2023-08-05T16:19:15.358Z] [iam] checking project react-clone-51612 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-05T16:19:15.360Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-clone-51612:testIamPermissions [none]
+[debug] [2023-08-05T16:19:15.360Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-clone-51612:testIamPermissions x-goog-quota-user=projects/react-clone-51612
+[debug] [2023-08-05T16:19:15.361Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-clone-51612:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-05T16:19:15.642Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-clone-51612:testIamPermissions 200
+[debug] [2023-08-05T16:19:15.642Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-clone-51612:testIamPermissions {}
+[debug] [2023-08-05T16:19:15.642Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project react-clone-51612:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-08-05T16:19:15.643Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-clone-51612 [none]
+[debug] [2023-08-05T16:19:15.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-clone-51612 403
+[debug] [2023-08-05T16:19:15.946Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-clone-51612 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-08-05T16:19:15.946Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-08-05T16:19:16.048Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\semir\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\semir\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project react-clone-51612. Please make sure the project exists and your account has permission to access it.

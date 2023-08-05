@@ -12,7 +12,7 @@ import {loadStripe} from "@stripe/stripe-js"
 import { Elements} from "@stripe/react-stripe-js"
 import Orders from './Orders';
 
- const promise=loadStripe('pk_test_51NIzC0EF8HqAkUiVZungbtmQFsZoBsnl3JGRl7L5ksTZtGZE5T6Cg6yP3UyTOVJnPa9xv0HAPDBhlVDUzKPZ7jxu00WtSCLvJV' 
+ const promise=loadStripe('pk_test_51NQ0CDEwY009yEtq0dXc2VzzCEmD7FyiCPT3GpaTzPbTYP3j7RANvSsZNljkMa1OW0F36JlhGsMmfHrrs60qL5Y500IYG8EgBu' 
  );
 
 
